@@ -2,7 +2,7 @@
 	include 'koneksi.php';
 	$id=$_GET['id'];
 
-	$sql = "DELETE from tbl_051 where kodeProv=$id";
+	$sql = "DELETE from tbl_051 where id_051=$id";
 	$hasil = mysqli_query($koneksi,$sql);
 	if(!$hasil){
 		echo "Delete Gagal";

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tabel Provinsi</title>
+	<title>Tabel Mahasiswa</title>
 </head>
 <body>
-	<table border="1" width="500px">
-		<caption><b>TABEL PROVINSI</b></caption>
+	<table border="1" width="1000px" align="center">
+		<caption><b>TABEL Mahasiswa</b></caption>
 		<tr>
-			<td><b>Kode Provinsi</b></td>
-			<td><b>Nama Provinsi</b></td>
+			<td><b>ID Mahasiswa</b></td>
+			<td><b>Nama Mahasiswa</b></td>
+			<td><b>Email Mahasiswa</b></td>
 			<td><b>Aksi</b></td>
 		</tr>
 			<?php
@@ -19,19 +20,19 @@
 			{
 			?>
 		<tr>
-			<td><?=$row['kodeProv'];?></td>
-			<td><?=$row['namaProv'];?></td>
-			<td><a href="form_edit.php?id=<?=$row['kodeProv']?>">Edit | <a href="delete.php?id=<?=$row['kodeProv']?>"> Delete</td>
+			<td><?=$row['id_051'];?></td>
+			<td><?=$row['nama_051'];?></td>
+			<td><?=$row['email_051'];?></td>
+			<td><a href="formEdit.php?id=<?=$row['id_051']?>">Edit | <a href="delete.php?id=<?=$row['id_051']?>"> Delete</td>
 		<?php
 		}
 		?>
 		</tr>
 		<tr>
-			<td colspan="3" align="center"><?php
-				echo "<a href='form-inputdata.php'>Tambah Data</a>";
+			<td colspan="4" align="center"><?php
+				echo "<a href='formInput.php'>Tambah Data</a>";
 			?></td>
 		</tr>
 	</table>
-	
 </body>
 </html>
